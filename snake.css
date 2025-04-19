@@ -1,0 +1,14 @@
+table {
+    border-collapse: collapse;
+}
+
+td {
+    width: 20px;
+    height: 20px;
+    border: 1px solid #ccc;
+}
+
+#grid{
+    justify-items: center;
+    align-items: center;
+}
