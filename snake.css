@@ -1,3 +1,8 @@
+.center-container{
+    justify-items: center;
+    align-items: center;
+}
+
 table {
     border-collapse: collapse;
 }

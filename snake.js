@@ -34,7 +34,7 @@ function drawSnake() {
     // Clear the entire grid
     for (var i = 0; i < size; i++) {
         for (var j = 0; j < size; j++) {
-            parent.rows[i].cells[j].style.backgroundColor = "white";
+            parent.rows[i].cells[j].style.backgroundColor = "#112A12";
         }
     }
 
@@ -44,7 +44,7 @@ function drawSnake() {
     // Draw the snake
     for (var i = 0; i < snake.length; i++) {
         parent.rows[snake[i].y].cells[snake[i].x].style.backgroundColor =
-            i === 0 ? "black" : "green";
+            i === 0 ? "white" : "green";
     }
 }
 
@@ -71,7 +71,7 @@ function start() {
 
 function move() {
     var parent = document.getElementById("grid");
-    parent.rows[block.y].cells[block.x].style.backgroundColor = "white";
+    parent.rows[block.y].cells[block.x].style.backgroundColor = "#112A12";
 
     if (growing) {
         var newSegment = { ...snake[snake.length - 1] };
@@ -158,7 +158,7 @@ function clearGrid() {
     var parent = document.getElementById("grid");
     for (var i = 0; i < size; i++) {
         for (var j = 0; j < size; j++) {
-            parent.rows[i].cells[j].style.backgroundColor = "white";
+            parent.rows[i].cells[j].style.backgroundColor = "#112A12";
         }
     }
 }
